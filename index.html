@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atyrau Avenue - Меню</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .header h2 {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: #8B4513;
+            margin: 0 auto;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #8B4513;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #8B4513;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .menu-item span:last-child {
+            color: #666;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="header">
+            <h1>МЕНЮ</h1>
+            <h2>ATYRAU AVENUE</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="menu-grid">
+            <div class="left-column">
+                <div class="section">
+                    <h3 class="section-title">Закуски холодные</h3>
+                    <div class="menu-item">
+                        <span>Сырные роллы обычные</span>
+                        <span>2900 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Сырные роллы с лососем</span>
+                        <span>3200 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Ассорти Брускет</span>
+                        <span>3400 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Креветки натура</span>
+                        <span>3900 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Язык говяжий с овощами</span>
+                        <span>2900 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Горилла нарезные</span>
+                        <span>1500 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Овощная Нарезка</span>
+                        <span>2700 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Ассорти соленый</span>
+                        <span>2500 ₸</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Салаты</h3>
+                    <div class="menu-item">
+                        <span>Аму Мук</span>
+                        <span>1100 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Греческая</span>
+                        <span>2500 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Салат с белыми грибами</span>
+                        <span>2900 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Салат с крабом</span>
+                        <span>3333 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Цезарь с креветками</span>
+                        <span>3500 ₸</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Супы</h3>
+                    <div class="menu-item">
+                        <span>Суп лапша с курицей</span>
+                        <span>2200 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Том ям</span>
+                        <span>4100 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Чечевичный суп пюре</span>
+                        <span>2500 ₸</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section">
+                    <h3 class="section-title">Основное меню</h3>
+                    <div class="menu-item">
+                        <span>Салат Литературный</span>
+                        <span>2500 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Курица с молодым картофелем</span>
+                        <span>3600 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Говяжная отбивная</span>
+                        <span>2500 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Лосось запеченный</span>
+                        <span>6900 ₸</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Шашлыки</h3>
+                    <div class="menu-item">
+                        <span>Люля-кебаб</span>
+                        <span>4200 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Кебаб в лаваше с сыром</span>
+                        <span>4900 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Курица</span>
+                        <span>2200 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Баранина</span>
+                        <span>2900 ₸</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Гарниры</h3>
+                    <div class="menu-item">
+                        <span>Картофель по-домашнему с грибами</span>
+                        <span>2500 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Картофельное пюре</span>
+                        <span>1000 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Овощи гриль</span>
+                        <span>1500 ₸</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Рис отварной</span>
+                        <span>1000 ₸</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Обслуживание -10%</p>
+        </div>
+    </div>
+</body>
+</html>
